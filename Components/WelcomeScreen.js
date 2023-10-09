@@ -1,28 +1,13 @@
-// import * as React from 'react';
-// import { View, Text } from 'react-native';
-
-// export default function welcomescreen() {
-//   return (
-//     <View style={{ flex: 0.5 }}>
-//       <Text
-//         style={{fontWeight: 'bold' ,  padding: 40, fontSize: 30, color: 'black' }}
-//         numberOfLines={3}>
-//         Welcome to Little Lemon{"\n"}
-//         <Text style={{fontWeight: 'light' ,  fontSize: 20, color: 'black' }}> Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>     {' '}
-//       </Text>
-//     </View>
-//   );
-// }
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 
 export default function WelcomeScreen() {
   return (
-    <View style={{ flex: 1 }}>
+    <ScrollView indicatorStyle={"white"} style={{ flex: 1 }}>
       <Text
         style={{
           padding: 40,
-          fontSize: 30,
+          fontSize: 50,
           color: '#EDEFEE',
           textAlign: 'center',
         }}>
@@ -30,7 +15,7 @@ export default function WelcomeScreen() {
       </Text>
       <Text
         style={{
-          fontSize: 24,
+          fontSize: 38,
           padding: 20,
           marginVertical: 8,
           color: '#EDEFEE',
@@ -38,8 +23,8 @@ export default function WelcomeScreen() {
         }}>
         Little Lemon is a charming neighborhood bistro that serves simple food
         and classic cocktails in a lively but casual environment. We would love
-        to hear your experience with us!
+        to hear more about your experience with us!
       </Text>
-    </View>
+    </ScrollView>
   );
 }

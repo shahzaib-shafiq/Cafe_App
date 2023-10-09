@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { View, Text } from 'react-native';
 
-import LittleLemonHeader from './components/LittleLemonHeader';
-import LittleLemonFooter from './components/LittleLemonFooter';
-import WelcomeScreen from "./WelcomeScreen";
-//
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import WelcomeScreen from "./Components/WelcomeScreen";
+
 export default function App() {
   return (
     <>
@@ -13,11 +13,11 @@ export default function App() {
           flex: 1,
           backgroundColor: '#495E57',
         }}>
-        <LittleLemonHeader />
-        <WelcomeScreen />
+        <Header />
+        <WelcomeScreen/>
       </View>
       <View style={{ backgroundColor: '#495E57' }}>
-        <LittleLemonFooter />
+        <Footer />
       </View>
     </>
   );
